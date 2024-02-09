@@ -5,13 +5,13 @@ const JWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaW
 
 const pinFileToIPFS = async ()=> {
     const formData = new FormData();
-    const src = "Chaton.jpeg";
+    const src = "test.txt";
 
     const file = fs.createReadStream(src)
     formData.append('file', file)
 
     const pinataMetadata = JSON.stringify({
-        name: 'Chaton',
+        name: 'Test',
     });
     formData.append('pinataMetadata', pinataMetadata);
 
