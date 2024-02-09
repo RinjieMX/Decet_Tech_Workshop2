@@ -15,7 +15,7 @@ jobs:
       - name: Deploy to IPFS
         uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.4
         with:
-          path: '.'  # Chemin vers le dossier contenant les fichiers à déployer
+          path: '../../.'  # Chemin vers le dossier contenant les fichiers à déployer
           pin-name: 'My personal site'
           pinata-api-key: df427a1f1ba8016585de
           pinata-secret-api-key: bfdc8f190ffd7d4faf51377c82bc5062848d8c3c78b6d4434c06763071923fd1
